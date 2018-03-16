@@ -1,0 +1,10 @@
+# mandatory options
+ip: localhost
+port: 28015 # this is the default rethinkdb port
+database_name: machines
+
+tables:
+  - name: robots # mandatory
+    primary_key: serial_num # can be omitted, defaults to id
+    simple_index: [version, model] # can be omitted
+  - name: parts # mandatory
