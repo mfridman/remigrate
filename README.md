@@ -109,3 +109,20 @@ parts:
 
 }
 ```
+
+## Caution!!
+
+There is a `--dbdrop` flag, running it will ask for a confirmation:
+
+are you sure you want to drop the [machines] database [y/n]:
+
+n: 
+```shell
+exiting without dropping database [machines]
+```
+
+y:
+```shell
+1   database dropped
+2   table(s) dropped
+```
